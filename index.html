@@ -4,6 +4,32 @@
  <head>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
      <link rel="stylesheet" href="styles/styles.css">
+     <script crossorigin src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
+    <!-- To make the map appear, you must add your apikey -->
+    <script src="https://api-maps.yandex.ru/v3/?apikey=89704e85-859b-48fa-9070-3e8ea19025a0&lang=ru_RU">
+    </script>
+  <script>
+      initMap();
+
+      async function initMap() {
+          await ymaps3.ready;
+
+          const {YMap, YMapDefaultSchemeLayer} = ymaps3;
+
+          const map = new YMap(
+              document.getElementById('map'),
+              {
+                  location: {
+                      center: [49.106414, 55.796127],
+                      zoom: 10
+                  }
+              }
+          );
+
+          map.addChild(new YMapDefaultSchemeLayer());
+      }
+  </script>
+     <style> html, body, #app { width: 100%; height: 100%; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; } .toolbar { position: absolute; z-index: 1000; top: 0; left: 0; display: flex; align-items: center; padding: 16px; } .toolbar a { padding: 16px; }  </style>
  </head>
  <body>
 <div class="header">
@@ -52,28 +78,82 @@
   <div class="news_content"><button type="button" name="button"></button></div>
 </div>
 </div>
-<div class="restorant_carousel">
+<div class="restorant_carousel_top">
+
+<div class="restorant_card">
+
+    <div class="restorant_image">
+      <img src="" alt="">
+    </div>
+
+    <div class="restorant_text">
+    <h2 class="restorant_name">Name</h2>
+    <ul class="restorant_description">
+      <li class="restorant_street"></li>
+      <li class="restorant_metro"></li>
+      <li class="restorant_feature"></li>
+    </ul>
+      </div>
 
 </div>
-<script type="text/javascript">
-  let currentIndex = 0;
-const carouselItems = document.querySelectorAll('.carousel-item');
-function goToSlide(index) {
-  if (index &lt; 0) {
-    index = carouselItems.length - 1;
-  } else if (index &gt;= carouselItems.length) {
-    index = 0;
-  }
-  currentIndex = index;
-  document.querySelector('.carousel-inner').style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-function goToNextSlide() {
-  goToSlide(currentIndex + 1);
-}
-function goToPrevSlide() {
-  goToSlide(currentIndex - 1);
-}
-setInterval(goToNextSlide, 3000); // автоматическая прокрутка каждые 3 секунды
-</script>
+
+
+
+</div>
+
+<div class="often seek">
+  <div class=""><img src="" alt=""> <a href="#"></a> </div>
+  <div class=""> <img src="" alt=""><a href="#"></a> </div>
+  <div class=""> <img src="" alt=""> <a href="#"></a></div>
+  <div class=""> <img src="" alt=""><a href="#"></a> </div>
+  <div class=""> <img src="" alt=""><a href="#"></a> </div>
+</div>
+<div class="restorant_carousel_popular">
+<div class="restorant_card">
+
+    <div class="restorant_image">
+      <img src="" alt="">
+    </div>
+
+    <div class="restorant_text">
+    <h2 class="restorant_name">Name</h2>
+    <ul class="restorant_description">
+      <li class="restorant_street"></li>
+      <li class="restorant_metro"></li>
+      <li class="restorant_feature"></li>
+    </ul>
+      </div>
+
+</div>
+</div>
+<div class="footer">
+  <ul>
+    <li><a href="#">New Page</a></li>
+    <li><a href="#">Контакты</a></li>
+    <li><a href="#">По вопросам рекламы</a></li>
+    <li><a href="#">Редакция</a></li>
+    <li><a href="#">Добавить заведение</a></li>
+  </ul>
+  <ul>
+    <li><a href="#">Социальные сети</a></li>
+    <li><a href="#">Вконтакте</a></li>
+    <li><a href="#">Телеграм</a></li>
+    <li><a href="#">Дзен</a></li>
+    <li><a href="#">Vc.ru</a></li>
+  </ul>
+  <ul>
+    <li><a href="#">Все рестораны</a></li>
+    <li><a href="#">Популярное</a></li>
+    <li><a href="#">Новости</a></li>
+    <li><a href="#">Открытия</a></li>
+    <li><a href="#">Статьи</a></li>
+  </ul>
+  <ul>
+    <li>Политика конфиденциальности</li>
+    <li>ИП или ООО</li>
+    <li>Договор офферты</li>
+  </ul>
+</div>
+ <div id="map" style="width: 600px; height: 400px"></div>
  </body>
 </html>
