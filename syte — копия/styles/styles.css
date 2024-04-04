@@ -8,7 +8,9 @@ a{
 .carousel {
 
   position: relative;
-  margin: auto;
+  margin-left: 10px;
+  margin-top: 9px;
+  height: 550px;
 }
 
 /* Hide the images by default */
@@ -59,11 +61,15 @@ img{
   height: 100%;
 }
 
+.tel{
+  font-size: 20px;
+}
+
 .header {
   display: flex;
   width: 90%;
   height: 80px;
-  background-color: #ECC99D;
+  background-color: #eec87c;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid black;
@@ -88,6 +94,22 @@ img{
   to {opacity: 1}
 }
 
+.first_top, .second_top, .third_top, .fourth_top, .fifth_top{
+  display: flex;
+}
+
+.top_image{
+  width: 35px;!important
+  height: 35px;!important
+}
+
+.top_text{
+  margin-left: 4px;
+margin-top: 7px;
+font-size: 20px;
+font-weight: 900;
+}
+
 .carousel-item{
   width: 100%;
   height: 550px;
@@ -110,7 +132,7 @@ img{
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #6549D7;
+  background-color: #eec87c;
   border: 1px solid;
   border-radius: 10px;
   justify-content: space-around;
@@ -123,30 +145,52 @@ img{
 
 .news{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 90%;
   height: 580px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #6549D7;
+  background-color: #eec87c;
 
 }
 
 .carousel{
-  width: 60%;
+  width: 40%;
   background-color: #476BD6;
+  box-shadow: 3px 5px 15px black;
 }
 
 .news_blocks{
-  width: 38%;
-  padding-right: 7px;
+  width: 58%;
+  padding-right: 10px;
 }
 
-.news_content_1, .news_content_2, .news_content_3{
+.news_squares{
+  width: 100%;
+  display: flex;
+  margin-top: -6px;
+  margin-right: 5px;
+}
+
+.squares_1, .squares_2{
+  width: 50%;
+  height: 355px;
+  background-color: red;
+  margin-top: 20px;
+  box-shadow: 3px 5px 15px black;
+
+}
+
+.squares_2{
+  margin-left: 40px;
+}
+
+.news_banner{
   width: 100%;
   margin-top: 10px;
   height: 180px;
   background-color: #476BD6;
+  box-shadow: 3px 5px 15px black;
 }
 
 .restorant_carousel_top{
@@ -154,18 +198,20 @@ img{
   margin-left: auto;
   margin-right: auto;
   height: 300px;
-  background-color: #6549D7;
+  background-color: #eec87c;
   margin-top: 35px;
   display: flex;
   justify-content: space-around;
 }
 
+
+
 .restorant_card{
   height: 250px;
-  background-color: #476BD6;
   margin-top: auto;
   margin-bottom: auto;
   width: 20%;
+  box-shadow: 3px 5px 15px black;
 }
 
 .restorant_image{
@@ -189,7 +235,7 @@ img{
   margin-left: auto;
   margin-right: auto;
   height: 300px;
-  background-color: #6549D7;
+  background-color: #eec87c;
   margin-top: 35px;
  display: flex;
  justify-content: space-around;
@@ -203,6 +249,7 @@ img{
   margin-top: 60px;
   background-color: #eec87c;
   justify-content: space-around;
+  font-size: 18px;
 }
 
 ul{
