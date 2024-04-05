@@ -25,12 +25,12 @@ a{
 
 }
 .vk, .dzen, .vc, .bot{
-  width: 28px;
-  height: 28px;
+  width: 17px;
+  height: 15px;
 }
 
 .logo{
-  width: 300px;
+  width: 175px;
   display: flex;
 }
 
@@ -43,8 +43,8 @@ a{
 }
 
 .registration{
-  width: 25px;
-  height: 25px;
+  width: 17px;
+  height: 15px;
 }
 form{
   margin-left: auto;
@@ -53,7 +53,8 @@ form{
 }
 
 input{
-
+width: 400px;
+height: 25px;
 }
 
 img{
@@ -62,7 +63,7 @@ img{
 }
 
 .tel{
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .header {
@@ -72,9 +73,7 @@ img{
   background-color: #eec87c;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+
 }
 
 .fade {
@@ -99,15 +98,13 @@ img{
 }
 
 .top_image{
-  width: 35px;!important
-  height: 35px;!important
+  width: 16px;!important
+  height: 16px;!important
 }
 
 .top_text{
   margin-left: 4px;
-margin-top: 7px;
-font-size: 20px;
-font-weight: 900;
+  font-size: 14px;
 }
 
 .carousel-item{
@@ -118,7 +115,6 @@ font-weight: 900;
   display: flex;
   list-style-type: none;
   justify-content: space-between;
-  padding-left: 20%;
   width: 60%;
   margin-top: auto;
   margin-bottom: auto;
@@ -128,19 +124,24 @@ font-weight: 900;
 .tops{
   display: flex;
   width: 90%;
-  height: 80px;
-  margin-top: 30px;
+  height: 20px;
   margin-left: auto;
   margin-right: auto;
   background-color: #eec87c;
-  border: 1px solid;
-  border-radius: 10px;
-  justify-content: space-around;
+  padding-top: 7px;
+  font-family: GTEestiPro, arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.tops_opisanie{
+  margin-left: 10px;
 }
 
 .first_top, .second_top, .third_top, .fourth_top, .fifth_top{
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: 25px;
 }
 
 .news{
