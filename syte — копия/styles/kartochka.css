@@ -1,0 +1,197 @@
+.navbar_menu{
+  display: flex;
+}
+
+.information, .sales, .map, .similar_place, .tops{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.description{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.gallerey{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 5px;
+}
+
+.carousel-items{
+  height: 800px;!important
+}
+
+.navbar, .sidebar{
+  width: 90%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rest_logo{
+  width: 90%;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.rest_image{
+  width: 120px;
+  height: 120px;
+  margin-left: 60px;
+}
+
+
+.acardeon_content{
+width: 200px;
+height: 200px;
+background-color: black;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.gallerey{
+  height: 304px;
+}
+
+ .sidebar_menu{
+   display: flex;
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+   background: #e0f6fd;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    height: 100px;
+ }
+
+.photos{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 80%;
+  height: 800px;
+  margin-left: auto;
+  margin-top: auto;
+  background-color: black;
+}
+
+.carousels{
+  width: 70%;
+  height: auto;
+}
+
+
+
+.image_box{
+  width: 30%;
+  height: auto;
+  background-color: blue;
+}
+
+.images{
+  width: 100%;
+  height: 255px;
+  margin-bottom: 18px;
+  background-color: red;
+}
+
+.sales{
+  width: 70%;
+  height: 300px;
+  background-color: red;
+}
+
+.sales_content{
+  display: flex;
+    height: 300px;
+}
+
+.sales_image{
+  width: 70%;
+  height: auto;
+  background-color: blue;
+}
+
+.sales_description{
+  width: 30%;
+  height: auto;
+  text-align: center;
+}
+
+.similar_place{
+  width: 100%;
+}
+
+.gallerey_inner{
+  height: 200px;
+  display: flex;
+}
+
+.gallerey_card{
+  width: 300px;
+  height: 300px;
+}
+
+.tekst_sverhu_kartinki {
+  position: relative;
+  top: -157px;
+  left: 45px;
+  text-transform: uppercase;
+  color: white;
+  width: 350px;
+  padding: 10px;
+  text-align: center;
+  font: bold 24px/34px Helvetica, Sans-Serif;
+}
+
+.navbar_menu{
+  margin-top: 40px;
+}
+
+.navbar_buttons{
+  transition: .3s;
+font-size: 16px;
+line-height: 24px;
+font-weight: 500;
+padding: 12px 24px;
+border-radius: 16px;
+background-color: #e3e5ed;
+margin-left: 20px;
+}
+
+.first{
+  background: #f3f6f7;
+}
+
+.first, .second{
+  height: 30px;
+}
+
+.name{
+
+}
+
+.value{
+  padding-left: 50px;
+  text-align: right;
+}
+
+.map{
+  width: 70%;
+  height: 300px;
+}

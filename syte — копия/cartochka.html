@@ -1,0 +1,365 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+     <link rel="stylesheet" href="styles/kartochka.css">
+     <link rel="stylesheet" href="styles/styles.css">
+
+     <script src="https://api-maps.yandex.ru/v3/?apikey=89704e85-859b-48fa-9070-3e8ea19025a0&lang=ru_RU"></script>
+     <script>
+            initMap();
+
+            async function initMap() {
+                await ymaps3.ready;
+                const {YMap, YMapDefaultSchemeLayer} = ymaps3;
+                const map = new YMap(
+                    document.getElementById('map'),
+                    {
+                        location: {
+                            center: [37.588144, 55.733842],
+                            zoom: 10
+                        }
+                    }
+                );
+                const markerElement = document.createElement('div');
+                const content = document.createElement('section');
+const marker = new  ymaps3.YMapMarker(
+  {
+    coordinates: [37.588144, 55.733842],
+    draggable: true
+  },
+   content
+);
+
+                map.addChild(new YMapDefaultSchemeLayer());
+                map.addChild(new ymaps3.YMapDefaultFeaturesLayer());
+               map.addChild(marker);
+            }
+        </script>
+ </head>
+ <body>
+   <div class="header">
+     <div class = "logo"><img class="log" src="Top.png" alt=""><a class="logo_text" href="index.html"><h2>New Page</h2></a>
+     </div>
+     <ul class="header_menu">
+       <li><div class="searcher">
+       <form action="" method="get">
+         <input name="search" placeholder="Искать в New Page" type="search">
+         <button type="submit">Поиск</button>
+       </form>
+       </div></li>
+       <li class="tel"><a href="#">93939393939</a><br/> Размещение рекламы на сайте</li>
+       <li class="vk"><a href="#"></a><img src="vk.svg" alt=""></li>
+       <li class="dzen"><a href="#"></a><img src="dzen.png" alt=""></li>
+       <li class="vc"><a href="#"></a><img src="vc.png" alt=""></li>
+       <li class="bot"<a href="#"></a><img src="tg.png" alt=""></li>
+       <li class="registration"><a href="#"><img src="login.webp" alt=""></a></li>
+     </ul>
+   </div>
+   <div class="tops">
+     <div class="tops_opisanie">Топовые подборки</div>
+     <div class="first_top"><img  class="top_image" src="karaoke.svg" alt=""><a class="top_text" href="#">Все рестораны</a></div>
+     <div class="second_top"><img class="top_image" src="karaoke.svg" alt=""><a class="top_text" href="#">Топ-20</a></div>
+     <div class="third_top"><img  class="top_image" src="karaoke.svg" alt=""><a class="top_text" href="#">14 февраля</a></div>
+     <div class="fourth_top"><img  class="top_image" src="karaoke.svg" alt=""><a class="top_text" href="#">Красивый вид</a></div>
+     <div class="fifth_top"><img  class="top_image" src="karaoke.svg" alt=""><a class="top_text" href="#">Банкетные залы</a></div>
+     <div class="fifth_top"><img  class="top_image" src="karaoke.svg" alt=""><a class="top_text" href="#">Свадьбы</a></div>
+     <div class="fifth_top"><img  class="top_image" src="karaoke.svg" alt=""><a class="top_text" href="#">Бары</a></div>
+     <div class="fifth_top"><img  class="top_image" src="karaoke.svg" alt=""><a class="top_text" href="#">Афиши</a></div>
+     <div class="fifth_top"><img  class="top_image" src="karaoke.svg" alt=""><a class="top_text" href="#">Новые рестораны</a></div>
+   </div>
+   <div class="rest_logo">
+     <div class="rest_image">
+          <img src="landing_logo.jpg" alt="">
+     </div>
+     <h2>288 СИТИ</h2>
+   </div>
+   <div class="navbar">
+     <ul class="navbar_menu">
+      <li class="navbar_buttons"><a href="#">+7 (495) 275-**показать</a></li>
+      <li class="navbar_buttons"><a href="#">Как доехать</a></li>
+      <li class="navbar_buttons"><a href="#">Telegram</a></li>
+      <li class="navbar_buttons"><a href="#">WhatsApp</a></li>
+      <li class="navbar_buttons"><a href="#">сайт</a></li>
+      <li class="navbar_buttons"><a href="#">vk</a></li>
+     </ul>
+     <a href="#"></a>
+   </div>
+   <div class="sidebar">
+   <ul class="sidebar_menu">
+     <li>1-й Красногвардейский пр-д, д. 21, стр. 2, Небоскреб ОКО, 85 этаж / 354 Exclusive height</li>
+     <li>Открыт до 24:00</li>
+     <li>Международная (283 м)</li>
+     <li>3000-4000 руб.<br>средний счет</li>
+   </ul>
+   </div>
+   <ul class="tags">
+
+   </ul>
+   <div class="photos">
+     <div class="carousels">
+       <div class="carousel-inner">
+         <div class="carousel-items fade">
+           <img src="restoran-ruski.jpg"  alt="">
+         </div>
+         <div class="carousel-items fade">
+           <img src="казань.jpg" alt="">
+         </div>
+       </div>
+     </div>
+     <div class="image_box">
+      <div class="images"><img src="казань.jpg" alt=""></div>
+      <div class="images"><img src="казань.jpg" alt=""></div>
+      <div class="images" id="open_gallery"><img src="казань.jpg" alt=""><div class="tekst_sverhu_kartinki">показать все фото</div></div>
+      </div>
+   </div>
+   <div class="gallerey" id="gallerey">
+     <div class="gallerey_inner">
+     <div class="gallerey_card"><img src="казань.jpg" alt=""></div>
+     <div class="gallerey_card"><img src="казань.jpg" alt=""></div>
+     <div class="gallerey_card"><img src="казань.jpg" alt=""></div>
+     </div>
+   </div>
+   <div class="information">
+     <div class="restorant_name">
+       <h3>asdsadsa</h3>
+     </div>
+     <div class="restorant_information">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus risus, finibus ornare vestibulum et, feugiat quis dui. Vivamus sit amet dolor et magna facilisis rhoncus. Curabitur maximus est sed porta scelerisque. Sed suscipit, arcu volutpat feugiat posuere, eros nisi tristique nibh, mollis vehicula lectus tortor eu purus. Donec ut tortor blandit, sagittis diam eget, suscipit eros. Quisque at magna neque. Nulla faucibus mi at nunc mattis placerat. Pellentesque quis augue quis elit tristique auctor. Integer varius est orci, vel egestas felis dictum nec. Phasellus porta ex sit amet turpis finibus, sed vestibulum nisl efficitur. Praesent ultrices diam enim. In ut tellus sed sem placerat sollicitudin. Donec quis mollis dolor. Etiam viverra, arcu cursus porttitor porttitor, diam nunc auctor nisl, quis placerat magna erat et odio. Phasellus feugiat turpis quis mollis lacinia. Sed ac orci et nisi venenatis pharetra ac non arcu.
+     </div>
+   </div>
+   <div class="sales">
+     <div class="sales_content">
+        <div class="sales_image">
+          <img src="казань.jpg" alt="">
+        </div>
+        <div class="sales_description">
+          <h3>awdsss</h3>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus risus, finibus ornare vestibulum et, feugiat quis dui. Vivamus sit amet dolor et magna facilisis rhoncus. Curabitur maximus est sed porta scelerisque. Sed suscipit, arcu volutpat feugiat posuere, eros nisi tristique nibh, mollis vehicula lectus tortor eu purus. Donec ut tortor blandit, sagittis diam eget, suscipit eros. Quisque at magna neque. Nulla faucibus mi at nunc mattis placerat. Pellentesque quis augue quis elit tristique auctor. Integer varius est orci, vel egestas felis dictum nec.
+          <button type="button" name="button"></button>
+        </div>
+     </div>
+   </div>
+   <div class="description">
+     <h2>Дополнительная информация</h2>
+   <table>
+     <tr class="first"><td class="name">Тип:</td><td class="value">Ресторан, Винотека, Банкетный зал</td></tr>
+     <tr class="second"><td class="name">Кухня:</td><td class="value">Русская</td></tr>
+     <tr class="first"><td class="name">Средний счет:</td><td class="value">3000-4000р</td></tr>
+     <tr class="second"><td class="name">Время работы:</td><td class="value">вс-чт 12:00–24:00, пт-сб 12:00-02:00</td></tr>
+     <tr class="first"><td class="name">Телефон заведения:</td><td class="value">+7(495) 777-71-11</td></tr>
+     <tr class="second"><td class="name">Официальный сайт:</td><td class="value">https://ruski354.ru/</td></tr>
+     <tr class="first"><td class="name">Адрес:</td><td class="value">1-й Красногвардейский пр-д, д. 21, стр. 2, Небоскреб ОКО, 85 этаж / 354 Exclusive height </td></tr>
+     <tr class="second"><td class="name">Метро:</td><td class="value">Международная</td></tr>
+     <tr class="first"><td class="name">Парковка:</td><td class="value">Городская платная</td></tr>
+     <tr class="second"><td class="name">Кол-во залов:</td><td class="value">4 зала: зал «У печи» - 90 мест, «Зеркальный» зал - 90 мест, «Черный» зал - 50 мест, зал «Кольчуги» - 50 мест</td></tr>
+   </table>
+   </div>
+   <div id="map" class="map">
+
+   </div>
+   <div class="similar_place">
+      <h2>Похожие места</h2>
+      <div class="restorant_carousel_top">
+
+      <div class="restorant_card">
+
+          <div class="restorant_image">
+            <img src="restoran-ruski.jpg"  alt="">
+          </div>
+
+          <div class="restorant_text">
+          <h2 class="restorant_name"></h2>
+          <ul class="restorant_description">
+            <li class="restorant_street">sdsd</li>
+            <li class="restorant_metro">dsads</li>
+            <li class="restorant_feature">cxcxcx</li>
+          </ul>
+            </div>
+
+      </div>
+      <div class="restorant_card">
+
+          <div class="restorant_image">
+            <img src="restoran-ruski.jpg"  alt="">
+          </div>
+
+          <div class="restorant_text">
+          <h2 class="restorant_name"></h2>
+          <ul class="restorant_description">
+            <li class="restorant_street">sdsd</li>
+            <li class="restorant_metro">dsads</li>
+            <li class="restorant_feature">cxcxcx</li>
+          </ul>
+            </div>
+
+      </div>
+      <div class="restorant_card">
+
+          <div class="restorant_image">
+            <img src="restoran-ruski.jpg"  alt="">
+          </div>
+
+          <div class="restorant_text">
+          <h2 class="restorant_name"></h2>
+          <ul class="restorant_description">
+            <li class="restorant_street">sdsd</li>
+            <li class="restorant_metro">dsads</li>
+            <li class="restorant_feature">cxcxcx</li>
+          </ul>
+            </div>
+
+      </div>
+      <div class="restorant_card">
+
+          <div class="restorant_image">
+            <img src="restoran-ruski.jpg"  alt="">
+          </div>
+
+          <div class="restorant_text">
+          <h2 class="restorant_name"></h2>
+          <ul class="restorant_description">
+            <li class="restorant_street">sdsd</li>
+            <li class="restorant_metro">dsads</li>
+            <li class="restorant_feature">cxcxcx</li>
+          </ul>
+            </div>
+
+      </div>
+
+      </div>
+   </div>
+   <div class="top">
+     <h2>Топ ресторанов</h2>
+     <div class="restorant_carousel_top">
+
+     <div class="restorant_card">
+
+         <div class="restorant_image">
+           <img src="restoran-ruski.jpg"  alt="">
+         </div>
+
+         <div class="restorant_text">
+         <h2 class="restorant_name"></h2>
+         <ul class="restorant_description">
+           <li class="restorant_street">sdsd</li>
+           <li class="restorant_metro">dsads</li>
+           <li class="restorant_feature">cxcxcx</li>
+         </ul>
+           </div>
+
+     </div>
+     <div class="restorant_card">
+
+         <div class="restorant_image">
+           <img src="restoran-ruski.jpg"  alt="">
+         </div>
+
+         <div class="restorant_text">
+         <h2 class="restorant_name"></h2>
+         <ul class="restorant_description">
+           <li class="restorant_street">sdsd</li>
+           <li class="restorant_metro">dsads</li>
+           <li class="restorant_feature">cxcxcx</li>
+         </ul>
+           </div>
+
+     </div>
+     <div class="restorant_card">
+
+         <div class="restorant_image">
+           <img src="restoran-ruski.jpg"  alt="">
+         </div>
+
+         <div class="restorant_text">
+         <h2 class="restorant_name"></h2>
+         <ul class="restorant_description">
+           <li class="restorant_street">sdsd</li>
+           <li class="restorant_metro">dsads</li>
+           <li class="restorant_feature">cxcxcx</li>
+         </ul>
+           </div>
+
+     </div>
+     <div class="restorant_card">
+
+         <div class="restorant_image">
+           <img src="restoran-ruski.jpg"  alt="">
+         </div>
+
+         <div class="restorant_text">
+         <h2 class="restorant_name"></h2>
+         <ul class="restorant_description">
+           <li class="restorant_street">sdsd</li>
+           <li class="restorant_metro">dsads</li>
+           <li class="restorant_feature">cxcxcx</li>
+         </ul>
+           </div>
+
+     </div>
+
+     </div>
+   </div>
+   <div class="footer">
+     <ul>
+       <li>New Page</li>
+       <li><a href="#">Контакты</a></li>
+       <li><a href="#">По вопросам рекламы</a></li>
+       <li><a href="#">Редакция</a></li>
+       <li><a href="#">Добавить заведение</a></li>
+     </ul>
+     <ul>
+       <li>Социальные сети</li>
+       <li><a href="#">Вконтакте</a></li>
+       <li><a href="#">Телеграм</a></li>
+       <li><a href="#">Дзен</a></li>
+       <li><a href="#">Vc.ru</a></li>
+     </ul>
+     <ul>
+       <li>Все рестораны</li>
+       <li><a href="#">Популярное</a></li>
+       <li><a href="#">Новости</a></li>
+       <li><a href="#">Открытия</a></li>
+       <li><a href="#">Статьи</a></li>
+     </ul>
+     <ul>
+       <li><a href="#">Политика конфиденциальности</a></li>
+       <li>ИП или ООО</li>
+       <li><a href="#">Договор офферты</a></li>
+     </ul>
+   </div>
+   <script>
+  document.addEventListener("DOMContentLoaded", hiddenCloseclick());
+  document.getElementById('open_gallery').addEventListener("click", hiddenCloseclick);
+ function hiddenCloseclick() {
+ let x = document.getElementById('gallerey');
+      if (x.style.display == "none"){
+   x.style.display = "block";
+   } else {
+ x.style.display = "none"}
+    };
+  </script>
+
+   <script type="text/javascript">
+
+     var slideIndex = 0;
+   showSlides();
+
+   function showSlides() {
+       var i;
+       var slides = document.getElementsByClassName("carousel-items");
+       for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+       }
+       slideIndex++;
+       if (slideIndex > slides.length) {slideIndex = 1}
+       slides[slideIndex-1].style.display = "block";
+       setTimeout(showSlides, 4000); // Change image every 2 seconds
+   }
+   </script>
+
+ </body>
+</html>
