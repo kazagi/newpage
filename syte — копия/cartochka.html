@@ -75,9 +75,19 @@ const marker = new  ymaps3.YMapMarker(
      <div class="rest_image">
           <img src="landing_logo.jpg" alt="">
      </div>
-     <h2>288 СИТИ</h2>
+     <div class="counter">
+       <div class="counter_image">
+         <img src="https://www.restoran.ru/bitrix/templates/main_2020/tpl/img/detail-stat-counter-flag--corn.svg" alt="">
+       </div>
+       33 человека <br>
+       Интересовались этим заведением за последние сутки
+     </div>
+     <div class="yandex">
+       <img src="yandex.png" alt="">
+     </div>
    </div>
    <div class="navbar">
+    <h2 class="rest_name">288 СИТИ</h2>
      <ul class="navbar_menu">
       <li class="navbar_buttons"><a href="#">+7 (495) 275-**показать</a></li>
       <li class="navbar_buttons"><a href="#">Как доехать</a></li>
@@ -91,14 +101,38 @@ const marker = new  ymaps3.YMapMarker(
    <div class="sidebar">
    <ul class="sidebar_menu">
      <li>1-й Красногвардейский пр-д, д. 21, стр. 2, Небоскреб ОКО, 85 этаж / 354 Exclusive height</li>
-     <li>Открыт до 24:00</li>
+     <li class="time">Открыт до 24:00 <div class="time_opening">
+        <div class="time_working">
+          Время работы
+        </div>
+         <table class="times">
+           <tr class="first"><td class="name">понедельник</td><td class="value">12-00-23-00</td></tr>
+           <tr class="second"><td class="name">вторник</td><td class="value">12-00-23-00</td></tr>
+           <tr class="first"><td class="name">среда</td><td class="value">12-00-23-00</td></tr>
+           <tr class="second"><td class="name">четверг</td><td class="value">12-00-23-00</td></tr>
+           <tr class="first"><td class="name">пятница</td><td class="value">12-00-23-00</td></tr>
+           <tr class="second"><td class="name">суббота</td><td class="value">12-00-23-00</td></tr>
+           <tr class="first"><td class="name">воскресенье</td><td class="value">12-00-23-00</td></tr>
+         </table>
+     </div> </li>
      <li>Международная (283 м)</li>
      <li>3000-4000 руб.<br>средний счет</li>
    </ul>
    </div>
    <ul class="tags">
-
+     <li>Круглосуточно</li>
+     <li>Разрешено с домашними животными</li>
+     <li>С диванчиками</li>
+     <li>Вино по бокалам</li>
    </ul>
+   <div class="information">
+     <div class="restorant">
+       <h3>288 СИТИ</h3>
+     </div>
+     <div class="restorant_information">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus risus, finibus ornare vestibulum et, feugiat quis dui. Vivamus sit amet dolor et magna facilisis rhoncus. Curabitur maximus est sed porta scelerisque. Sed suscipit, arcu volutpat feugiat posuere, eros nisi tristique nibh, mollis vehicula lectus tortor eu purus. Donec ut tortor blandit, sagittis diam eget, suscipit eros. Quisque at magna neque. Nulla faucibus mi at nunc mattis placerat. Pellentesque quis augue quis elit tristique auctor. Integer varius est orci, vel egestas felis dictum nec. Phasellus porta ex sit amet turpis finibus, sed vestibulum nisl efficitur. Praesent ultrices diam enim. In ut tellus sed sem placerat sollicitudin. Donec quis mollis dolor. Etiam viverra, arcu cursus porttitor porttitor, diam nunc auctor nisl, quis placerat magna erat et odio. Phasellus feugiat turpis quis mollis lacinia. Sed ac orci et nisi venenatis pharetra ac non arcu.
+     </div>
+   </div>
    <div class="photos">
      <div class="carousels">
        <div class="carousel-inner">
@@ -123,14 +157,7 @@ const marker = new  ymaps3.YMapMarker(
      <div class="gallerey_card"><img src="казань.jpg" alt=""></div>
      </div>
    </div>
-   <div class="information">
-     <div class="restorant_name">
-       <h3>asdsadsa</h3>
-     </div>
-     <div class="restorant_information">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus risus, finibus ornare vestibulum et, feugiat quis dui. Vivamus sit amet dolor et magna facilisis rhoncus. Curabitur maximus est sed porta scelerisque. Sed suscipit, arcu volutpat feugiat posuere, eros nisi tristique nibh, mollis vehicula lectus tortor eu purus. Donec ut tortor blandit, sagittis diam eget, suscipit eros. Quisque at magna neque. Nulla faucibus mi at nunc mattis placerat. Pellentesque quis augue quis elit tristique auctor. Integer varius est orci, vel egestas felis dictum nec. Phasellus porta ex sit amet turpis finibus, sed vestibulum nisl efficitur. Praesent ultrices diam enim. In ut tellus sed sem placerat sollicitudin. Donec quis mollis dolor. Etiam viverra, arcu cursus porttitor porttitor, diam nunc auctor nisl, quis placerat magna erat et odio. Phasellus feugiat turpis quis mollis lacinia. Sed ac orci et nisi venenatis pharetra ac non arcu.
-     </div>
-   </div>
+   <h3 class="rest_sales">Акции в заведении</h3>
    <div class="sales">
      <div class="sales_content">
         <div class="sales_image">
@@ -145,7 +172,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus risus, f
    </div>
    <div class="description">
      <h2>Дополнительная информация</h2>
-   <table>
+   <table class="description_table">
      <tr class="first"><td class="name">Тип:</td><td class="value">Ресторан, Винотека, Банкетный зал</td></tr>
      <tr class="second"><td class="name">Кухня:</td><td class="value">Русская</td></tr>
      <tr class="first"><td class="name">Средний счет:</td><td class="value">3000-4000р</td></tr>

@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.information, .sales, .map, .similar_place, .tops{
+.information, .sales, .map, .similar_place, .tops, .tags{
   margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -24,12 +24,100 @@
 .carousel-items{
   height: 800px;!important
 }
-
-.navbar, .sidebar{
+.navbar{
   width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+    display: flex;
+}
+ .sidebar{
+  width: 96%;
   height: 100px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.rest_logo{
+  display: flex;
+}
+
+.yandex{
+  width: 180px;
+  height: 50px;
+  box-shadow: 3px 5px 15px black;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.counter{
+  width: 300px;
+  height: 70px;
+  background-color: white;
+  border-radius: 3px;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  box-shadow: 3px 5px 15px black;
+}
+
+.time_opening{
+  display: none;
+  box-shadow: 3px 5px 15px black;
+  text-align: left;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.time:hover .time_opening {
+  display: block;
+  position: absolute;
+}
+
+.tags{
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+}
+
+.tags > li {
+  background-color: white;
+  box-shadow: 3px 5px 15px black;
+  border-radius: 6px;
+  height: 30px;
+  width: auto;
+padding-top: 10px;
+padding-left: 3px;
+padding-right: 3px;
+  margin-right: 10px;
+}
+
+.times{
+  font-size: 20px;
+  font-weight: 500;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+
+.counter_image{
+  width: 59px;
+  height: 73px;
+}
+
+.time_working{
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.rest_name{
+  padding-top: 28px;
 }
 
 .rest_logo{
@@ -37,13 +125,25 @@
   height: 150px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+  margin-top: 60px;
+}
+
+.restorant{
+  margin-top: 60px;
+  margin-left: 7px;
+}
+
+.rest_sales{
+  width: 80%;
+  margin-left: 100px;
+  margin-top: 60px;
+
 }
 
 .rest_image{
   width: 120px;
   height: 120px;
-  margin-left: 60px;
+
 }
 
 
@@ -63,7 +163,7 @@ ul{
 
  .sidebar_menu{
    display: flex;
-   width: 90%;
+   width: 94%;
    margin-left: auto;
    margin-right: auto;
    background: #e0f6fd;
@@ -86,7 +186,7 @@ ul{
   width: 80%;
   height: 800px;
   margin-left: auto;
-  margin-top: auto;
+  margin-top: 60px;
   background-color: black;
 }
 
@@ -105,8 +205,7 @@ ul{
 
 .images{
   width: 100%;
-  height: 255px;
-  margin-bottom: 18px;
+  height: 267px;
   background-color: red;
 }
 
@@ -133,8 +232,10 @@ ul{
   text-align: center;
 }
 
-.similar_place{
-  width: 100%;
+.similar_place, .top{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .gallerey_inner{
@@ -189,6 +290,11 @@ margin-left: 20px;
 .value{
   padding-left: 50px;
   text-align: right;
+}
+
+.description_table{
+  margin-left: auto;
+margin-right: auto;
 }
 
 .map{
